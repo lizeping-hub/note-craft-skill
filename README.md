@@ -48,7 +48,7 @@ python3 -m http.server 8765 --directory docs
 
 发布 GitHub Pages：提交 Skill 和 `docs/` 后，在仓库 **Settings → Pages** 选择 **Deploy from a branch**，分支选 **main**，目录选 **/docs**，保存并等待发布。
 
-预期项目地址为：`https://lizeping-hub.github.io/note-craft-skill/`。页面路径使用相对地址，适配 GitHub Pages 项目子路径。
+已上线地址：[中文页面](https://lizeping-hub.github.io/note-craft-skill/) · [English](https://lizeping-hub.github.io/note-craft-skill/?lang=en)。页面路径使用相对地址，适配 GitHub Pages 项目子路径。
 
 页面主要入口是“复制安装命令”，没有仓库跳转或 ZIP 下载按钮。
 
@@ -76,4 +76,4 @@ The Skill is available on your next turn. Provide a Markdown file or pasted sour
 Use $note-craft-skill-v1 to process these Markdown learning notes.
 ```
 
-The static landing page lives in `docs/`. Enable GitHub Pages from `main` and `/docs`. The page has a complete English mode through the language switch or `?lang=en`. License and feedback channels are still undecided.
+The [live landing page](https://lizeping-hub.github.io/note-craft-skill/?lang=en) lives in `docs/`. GitHub Pages publishes from `main` and `/docs`. The page has a complete English mode through the language switch or `?lang=en`. License and feedback channels are still undecided.
