@@ -1,0 +1,5 @@
+interface:
+  display_name: "note-craft-skill-v1"
+  short_description: "将课堂 Markdown 笔记整理为知识库素材与专业研究报告"
+policy:
+  allow_implicit_invocation: true

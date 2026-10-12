@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1011">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="在 Codex 中，将 Markdown 学习笔记整理为保留原标题的知识库素材与专业研究报告。支持图片、表格、代码和链接整理。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="note-craft-skill-v1｜一份 Markdown 笔记，两种学习成果">
+  <meta property="og:description" content="在 Codex 中，将 Markdown 学习笔记整理为知识库素材与专业研究报告。">
+  <title>note-craft-skill-v1｜一份 Markdown 笔记，两种学习成果</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script src="./assets/content.js" defer></script>
+  <script src="./assets/main.js" defer></script>
+</head>
+<body>
+  <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-copy" viewBox="0 0 24 24"><path d="M9 9h11v11H9zM15 9V4H4v11h5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4 10-10"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M13 3H5v18h14V9l-6-6Z"/><path d="M13 3v6h6M9 13h6m-6 4h6"/></symbol>
+    <symbol id="i-heading" viewBox="0 0 24 24"><path d="M4 4v16m12-16v16M4 12h12m4 4v4m-2 0h4"/></symbol>
+    <symbol id="i-media" viewBox="0 0 24 24"><path d="M3 4h18v16H3zM3 16l5-5 4 4 3-3 6 6"/><circle cx="16" cy="8" r="1"/></symbol>
+    <symbol id="i-split" viewBox="0 0 24 24"><path d="M12 3v7m0 0-7 5v6m7-11 7 5v6M9 5l3-2 3 2"/></symbol>
+    <symbol id="i-rules" viewBox="0 0 24 24"><path d="M7 4H4v16h3m10-16h3v16h-3M10 8h4m-4 4h4m-4 4h4"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><path d="m4 6 6 6-6 6m9 0h7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  </defs></svg>
+
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">跳到正文</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#main" aria-label="note-craft-skill-v1">
+        <img src="./assets/favicon.svg" width="32" height="32" alt="">
+        <span>note-craft<span class="wordmark-dot">.</span></span>
+      </a>
+      <nav id="site-nav" class="site-nav" data-i18n-aria="a11y.navigation" aria-label="页内导航">
+        <a href="#features" data-i18n="nav.features">核心特性</a>
+        <a href="#workflow" data-i18n="nav.workflow">工作流</a>
+        <a href="#examples" data-i18n="nav.examples">产物示例</a>
+        <a href="#start" data-i18n="nav.start">快速上手</a>
+      </nav>
+      <div class="header-actions">
+        <span class="header-version mono">v0.1.0</span>
+        <div class="language-control" role="group" data-i18n-aria="a11y.language" aria-label="选择页面语言">
+          <button type="button" data-lang="zh" lang="zh-CN" aria-pressed="true">中文</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" class="menu-button" id="menu-toggle" aria-controls="site-nav" aria-expanded="false" data-i18n-aria="a11y.menu" aria-label="切换导航菜单">
+          <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="project-label mono"><span class="status-dot" aria-hidden="true"></span>note-craft-skill-v1 <span class="release-tag"><span data-i18n="release">预发布</span></span></div>
+        <p class="eyebrow" data-i18n="hero.eyebrow">MARKDOWN IN. KNOWLEDGE OUT.</p>
+        <h1 id="hero-title"><span data-i18n="hero.line1">一份笔记，</span><span class="accent-text" data-i18n="hero.line2">两种学习成果。</span></h1>
+        <p class="hero-description" data-i18n="hero.description">把零散的 Markdown 学习笔记，整理成保留原标题的知识库素材，以及可用于深度学习与面试准备的专业研究报告。</p>
+        <div class="hero-buttons">
+          <button class="button button-primary" type="button" data-copy-install><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span data-i18n="actions.copy">复制安装命令</span></button>
+          <a class="button button-secondary" href="#start"><span data-i18n="actions.start">快速上手</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+        <p class="action-hint" data-i18n="hero.hint">复制后，粘贴到 Codex 对话框并发送。</p>
+        <div class="hero-meta"><span><svg class="icon" aria-hidden="true"><use href="#i-terminal"/></svg><span data-i18n="hero.codex">为 Codex 编写</span></span><span class="meta-separator" aria-hidden="true">/</span><span data-i18n="hero.personal">个人级安装</span></div>
+      </div>
+      <figure class="pipeline-window" data-i18n-aria="terminal.label" aria-label="一份输入，两份独立产物">
+        <div class="window-bar"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="mono">note-craft / pipeline</span><svg class="icon" aria-hidden="true"><use href="#i-terminal"/></svg></div>
+        <div class="pipeline-content">
+          <div class="terminal-label mono" data-i18n="terminal.input">输入 · 原始学习笔记</div>
+          <div class="source-note">
+            <div class="source-filename mono"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg><span data-i18n="terminal.filename">课堂笔记.md</span><span class="file-extension">.md</span></div>
+            <div class="source-lines mono"><span class="source-heading" data-i18n="terminal.raw1">## Tool:给模型的说明书</span><span data-i18n="terminal.raw2">Function Calling、Tool Use、ReAct…</span><span class="source-muted" data-i18n="terminal.raw3">图片 / 表格 / 代码 / 链接</span></div>
+          </div>
+          <div class="pipeline-divider"><span class="pipeline-stem" aria-hidden="true"></span><svg class="icon" aria-hidden="true"><use href="#i-split"/></svg><span class="terminal-label mono" data-i18n="terminal.output">输出 · 分别整理，独立交付</span></div>
+          <div class="pipeline-outputs">
+            <div class="output-file"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg><div><strong class="mono" data-i18n="terminal.basic">基础整理版.md</strong><span data-i18n="terminal.basicDetail">原标题保留 · 知识库入库</span></div><svg class="icon file-check" aria-hidden="true"><use href="#i-check"/></svg></div>
+            <div class="output-file"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg><div><strong class="mono" data-i18n="terminal.research">专业研究报告版.md</strong><span data-i18n="terminal.researchDetail">知识重构 · 学习与面试</span></div><svg class="icon file-check" aria-hidden="true"><use href="#i-check"/></svg></div>
+          </div>
+        </div>
+        <figcaption data-i18n="terminal.caption">同一份材料，面向两种不同的学习用途。</figcaption>
+      </figure>
+    </section>
+
+    <section class="section container features-section" id="features" aria-labelledby="features-title">
+      <div class="section-intro">
+        <p class="eyebrow" data-i18n="features.eyebrow">01 / CAPABILITIES</p>
+        <h2 id="features-title" class="multiline" data-i18n="features.title">保留笔记的主干，
+整理信息的细节。</h2>
+        <p data-i18n="features.description">从 Markdown 中常见的杂乱元素开始，把处理规则变成可重复的工作流程。</p>
+      </div>
+      <div class="feature-list">
+        <article class="feature-row"><span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-heading"/></svg></span><div><h3 data-i18n="feature.headings.title">原标题结构保留</h3><p data-i18n="feature.headings.description">基础版逐字保留原标题的文字、层级与顺序，正文清洗不改动原有知识框架。</p></div></article>
+        <article class="feature-row"><span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-media"/></svg></span><div><h3 data-i18n="feature.media.title">图片与表格整理</h3><p data-i18n="feature.media.description">文字截图提取内容，概念图描述关系，表格复刻行列与数据；无法辨识的部分如实标记。</p></div></article>
+        <article class="feature-row"><span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-split"/></svg></span><div><h3 data-i18n="feature.outputs.title">双产物各有边界</h3><p data-i18n="feature.outputs.description">基础版负责清洗和修正，研究版负责重构与拓展，分别保存为完整 Markdown 文档。</p></div></article>
+        <article class="feature-row"><span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-rules"/></svg></span><div><h3 data-i18n="feature.rules.title">规则按需加载</h3><p data-i18n="feature.rules.description">核心流程写在 SKILL.md 中，详细规则按当前材料读取，减少无关内容进入上下文。</p></div></article>
+        <article class="feature-row"><span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span><div><h3 data-i18n="feature.validation.title">脚本校验与内容复核</h3><p data-i18n="feature.validation.description">脚本核对标题、格式与处理记录；OCR 数字、表格和研究引用仍需内容复核。</p></div></article>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="outputs" aria-labelledby="outputs-title">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow" data-i18n="outputs.eyebrow">02 / TWO DELIVERABLES</p><h2 id="outputs-title" data-i18n="outputs.title">整理归整理，研究归研究。</h2><p data-i18n="outputs.description">不把新增知识混入基础笔记，也不让研究报告停留在格式清洗。</p></div>
+        <div class="deliverable-grid">
+          <article class="deliverable"><div class="deliverable-top"><span class="mono" data-i18n="basic.tag">产物 01 · 知识库素材</span><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg></div><h3 data-i18n="basic.title">基础整理版</h3><p class="deliverable-description" data-i18n="basic.description">保持原笔记结构，让零散记录成为清晰、可检索的知识库输入。</p><ul class="check-list"><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="basic.point1">原标题、层级和顺序保持一致</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="basic.point2">清理图片、链接与多余格式</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="basic.point3">整理口语化表达，保留核心信息</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="basic.point4">表格按标准 Markdown 复刻</span></li></ul><div class="deliverable-footer"><span data-i18n="basic.footer">用于 Dify 等知识库入库</span><span class="mono">.md</span></div></article>
+          <article class="deliverable"><div class="deliverable-top"><span class="mono" data-i18n="research.tag">产物 02 · 深度学习材料</span><svg class="icon" aria-hidden="true"><use href="#i-rules"/></svg></div><h3 data-i18n="research.title">专业研究报告版</h3><p class="deliverable-description" data-i18n="research.description">沿着原知识主干建立完整逻辑，补齐原理、应用与技术取舍。</p><ul class="check-list"><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="research.point1">按定义、原理、应用、对比重构</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="research.point2">查阅原始资料，补充可靠来源</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="research.point3">增加实践要点与常见错误</span></li><li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="research.point4">形成面试追问与拓展思考</span></li></ul><div class="deliverable-footer"><span data-i18n="research.footer">用于系统学习与面试准备</span><span class="mono">.md</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="workflow" aria-labelledby="workflow-title">
+      <div class="section-heading"><p class="eyebrow" data-i18n="workflow.eyebrow">03 / THE WORKFLOW</p><h2 id="workflow-title" data-i18n="workflow.title">从原笔记到成品，四步推进。</h2><p data-i18n="workflow.description">确定性检查交给脚本，内容整理与研究交给 Codex。</p></div>
+      <ol class="workflow-steps">
+        <li><div class="step-top"><span class="step-number mono">01</span><svg class="icon step-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></div><h3 data-i18n="step1.title">清点输入</h3><p data-i18n="step1.description">冻结标题，清点图片与代码，分段读取原文。</p></li>
+        <li><div class="step-top"><span class="step-number mono">02</span><svg class="icon step-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></div><h3 data-i18n="step2.title">基础整理</h3><p data-i18n="step2.description">清理格式、处理素材，保留原信息与标题。</p></li>
+        <li><div class="step-top"><span class="step-number mono">03</span><svg class="icon step-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></div><h3 data-i18n="step3.title">研究重构</h3><p data-i18n="step3.description">组织知识体系，查证来源，补充实践与对比。</p></li>
+        <li><div class="step-top"><span class="step-number mono">04</span><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></div><h3 data-i18n="step4.title">校验交付</h3><p data-i18n="step4.description">检查结构与覆盖，复核内容，输出独立文档。</p></li>
+      </ol>
+    </section>
+
+    <section class="section container examples-section" id="examples" aria-labelledby="examples-title">
+      <div class="section-heading"><p class="eyebrow" data-i18n="examples.eyebrow">04 / BEFORE &amp; AFTER</p><h2 id="examples-title" class="multiline" data-i18n="examples.title">看一段真实课堂笔记，
+如何变成两种产物。</h2><p data-i18n="examples.description">节选自 10.12 的 Tool 与 Function Calling 课堂笔记及已有产物。英文版展示对应译文。</p></div>
+      <div class="example-window">
+        <div class="example-tabs" role="tablist" aria-labelledby="examples-title">
+          <button type="button" role="tab" id="tab-original" data-example="original" aria-controls="example-panel" aria-selected="true" tabindex="0"><span class="tab-prefix mono">00</span><span data-i18n="examples.originalTab">原笔记</span></button>
+          <button type="button" role="tab" id="tab-basic" data-example="basic" aria-controls="example-panel" aria-selected="false" tabindex="-1"><span class="tab-prefix mono">01</span><span data-i18n="examples.basicTab">基础整理版</span></button>
+          <button type="button" role="tab" id="tab-report" data-example="report" aria-controls="example-panel" aria-selected="false" tabindex="-1"><span class="tab-prefix mono">02</span><span data-i18n="examples.reportTab">研究报告版</span></button>
+        </div>
+        <div id="example-panel" class="example-panel" role="tabpanel" aria-labelledby="tab-original" tabindex="0">
+          <div class="example-document"><div class="example-filebar"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg><span id="example-filename" class="mono">10.12原笔记.md</span><span class="example-filetype mono">Markdown</span></div><pre class="example-code"><code id="example-code">## Tool:给模型的说明书
+
+Function Calling 函数调用，让模型具备调用工具的能力
+
+Tool Use
+
+React
+
+tool下可能有api，可能没有，可能它只是一套程序或者是一个脚本，我就可以把它封装成一个tool</code></pre></div>
+          <aside class="example-notes"><span class="terminal-label mono" data-i18n="examples.observation">处理变化</span><ul id="example-observations"><li>原笔记包含零散术语与口语表达。</li><li>模型提出请求和应用执行操作的职责尚未展开。</li><li>React 在此语境中需要澄清为 ReAct。</li></ul><span class="example-source mono" data-i18n="examples.excerpt">课堂笔记节选 · 10.12</span></aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="start" aria-labelledby="start-title">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow" data-i18n="start.eyebrow">05 / GET STARTED</p><h2 id="start-title" data-i18n="start.title">把安装交给 Codex。</h2><p data-i18n="start.description">无需手动拼装目录。复制下面的安装请求，让 Codex 获取 main 分支最新的 Skill。</p></div>
+        <div class="install-panel"><div class="install-panel-header"><div><span class="terminal-label mono" id="install-label" data-i18n="start.commandLabel">粘贴到 Codex 的安装指令</span><span class="install-meta" data-i18n="start.commandHint">个人级安装 · main 最新内容</span></div><button class="button button-primary button-compact" type="button" data-copy-install><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span data-i18n="actions.copy">复制安装命令</span></button></div><textarea class="install-command mono" id="install-command" readonly spellcheck="false" aria-labelledby="install-label">$skill-installer 请从 https://github.com/lizeping-hub/note-craft-skill/tree/main/note-craft-skill-v1 安装 main 分支最新的 note-craft-skill-v1，使用当前用户的个人级安装位置，并启用自动匹配。安装完成后，确认 Skill 可被发现，并告诉我调用方式。</textarea></div>
+        <ol class="start-steps"><li><span class="mono">01</span><div><h3 data-i18n="start.step1">复制安装命令</h3><p data-i18n="start.step1Detail">点击按钮，获取完整安装请求。</p></div></li><li><span class="mono">02</span><div><h3 data-i18n="start.step2">发送给 Codex</h3><p data-i18n="start.step2Detail">粘贴到对话框，按提示完成安装。</p></div></li><li><span class="mono">03</span><div><h3 data-i18n="start.step3">确认安装结果</h3><p data-i18n="start.step3Detail">在下一轮对话中确认 Skill 可被发现。</p></div></li><li><span class="mono">04</span><div><h3 data-i18n="start.step4">提供原始笔记</h3><p data-i18n="start.step4Detail">调用 Skill，附上 Markdown 文件或正文。</p></div></li></ol>
+        <div class="invocation"><span class="terminal-label mono" data-i18n="start.invocationLabel">安装后，这样开始</span><div><span class="prompt-mark mono" aria-hidden="true">&gt;</span><code data-i18n="start.invocation">用 $note-craft-skill-v1 处理这份 Markdown 学习笔记。</code></div></div>
+        <p class="version-note" data-i18n="start.versionNote">项目当前为 v0.1.0 预发布版本。安装获取 main 的最新内容，后续可能持续更新。</p>
+      </div>
+    </section>
+
+    <section class="section container" id="scenarios" aria-labelledby="scenarios-title">
+      <div class="section-heading"><p class="eyebrow" data-i18n="scenarios.eyebrow">06 / WHERE IT FITS</p><h2 id="scenarios-title" data-i18n="scenarios.title">让每次学习留下可复用的成果。</h2></div>
+      <div class="scenarios-grid"><article><span class="scenario-label mono">NOTES</span><h3 data-i18n="scenario.notes.title">课堂笔记整理</h3><p data-i18n="scenario.notes.description">把截图、零散记录与课堂示例整理成完整笔记。</p></article><article><span class="scenario-label mono">KNOWLEDGE</span><h3 data-i18n="scenario.knowledge.title">知识库建设</h3><p data-i18n="scenario.knowledge.description">将结构清晰的基础整理版用于 Dify 等知识库。</p></article><article><span class="scenario-label mono">RESEARCH</span><h3 data-i18n="scenario.study.title">技术深度学习</h3><p data-i18n="scenario.study.description">围绕原主题补齐定义、原理、应用和技术对比。</p></article><article><span class="scenario-label mono">INTERVIEWS</span><h3 data-i18n="scenario.interview.title">面试准备</h3><p data-i18n="scenario.interview.description">用研究报告梳理追问、实践思路和知识边界。</p></article></div>
+    </section>
+    <section class="closing container" aria-labelledby="closing-title"><div><p class="eyebrow mono">READY WHEN YOU ARE.</p><h2 id="closing-title" data-i18n="closing.title">从这份笔记开始。</h2><p data-i18n="closing.description">让整理有规则，让研究有依据。</p></div><button class="button button-primary" type="button" data-copy-install><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span data-i18n="actions.copy">复制安装命令</span></button></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><div class="footer-brand mono">note-craft-skill-v1<span class="footer-description" data-i18n="footer.built">为 Markdown 学习笔记而作。</span></div><div class="footer-details"><span><span data-i18n="footer.author">作者</span> <span class="mono">lizeping-hub</span></span><span class="footer-version mono">v0.1.0 <span data-i18n="release">预发布</span></span></div></div></footer>
+  <div class="toast" id="copy-status" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+</body>
+</html>
